@@ -16,6 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        //let firstFrame = CGRect(x: 160, y: 240, width: 100, height: 150)
+        let firstFrame = window!.bounds
+        let firstView = HypnosisView(frame: firstFrame)
+       // firstView.backgroundColor = UIColor.blueColor()
+        window!.addSubview(firstView)
+        
+        /*let secondFrame = CGRect(x: 20, y: 30, width: 50, height: 50)
+        let secondView = HypnosisView(frame: secondFrame)
+        secondView.backgroundColor = UIColor.greenColor()
+        //window!.addSubview(secondView)
+        
+        firstView.addSubview(secondView)*/
+        
+        window!.backgroundColor = UIColor.whiteColor()
+        window!.makeKeyAndVisible()
+        
+        
+        
         return true
     }
 

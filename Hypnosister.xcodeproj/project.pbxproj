@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2166D4581A1A9B0200619BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D4571A1A9B0200619BD3 /* AppDelegate.swift */; };
-		2166D45A1A1A9B0200619BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D4591A1A9B0200619BD3 /* ViewController.swift */; };
-		2166D45D1A1A9B0200619BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166D45B1A1A9B0200619BD3 /* Main.storyboard */; };
 		2166D45F1A1A9B0200619BD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2166D45E1A1A9B0200619BD3 /* Images.xcassets */; };
 		2166D4621A1A9B0200619BD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166D4601A1A9B0200619BD3 /* LaunchScreen.xib */; };
 		2166D46E1A1A9B0200619BD3 /* HypnosisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D46D1A1A9B0200619BD3 /* HypnosisterTests.swift */; };
+		2166D4781A1A9C7700619BD3 /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D4771A1A9C7700619BD3 /* HypnosisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +28,12 @@
 		2166D4521A1A9B0200619BD3 /* Hypnosister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2166D4561A1A9B0200619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2166D4571A1A9B0200619BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2166D4591A1A9B0200619BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2166D45C1A1A9B0200619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2166D45E1A1A9B0200619BD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2166D4611A1A9B0200619BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2166D4671A1A9B0200619BD3 /* HypnosisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2166D46C1A1A9B0200619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2166D46D1A1A9B0200619BD3 /* HypnosisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisterTests.swift; sourceTree = "<group>"; };
+		2166D4771A1A9C7700619BD3 /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2166D4571A1A9B0200619BD3 /* AppDelegate.swift */,
-				2166D4591A1A9B0200619BD3 /* ViewController.swift */,
-				2166D45B1A1A9B0200619BD3 /* Main.storyboard */,
+				2166D4771A1A9C7700619BD3 /* HypnosisView.swift */,
 				2166D45E1A1A9B0200619BD3 /* Images.xcassets */,
 				2166D4601A1A9B0200619BD3 /* LaunchScreen.xib */,
 				2166D4551A1A9B0200619BD3 /* Supporting Files */,
@@ -192,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2166D45D1A1A9B0200619BD3 /* Main.storyboard in Resources */,
 				2166D4621A1A9B0200619BD3 /* LaunchScreen.xib in Resources */,
 				2166D45F1A1A9B0200619BD3 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2166D45A1A1A9B0200619BD3 /* ViewController.swift in Sources */,
 				2166D4581A1A9B0200619BD3 /* AppDelegate.swift in Sources */,
+				2166D4781A1A9C7700619BD3 /* HypnosisView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +232,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2166D45B1A1A9B0200619BD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2166D45C1A1A9B0200619BD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2166D4601A1A9B0200619BD3 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
