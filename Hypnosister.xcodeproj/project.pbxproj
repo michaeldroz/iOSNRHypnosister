@@ -12,6 +12,8 @@
 		2166D4621A1A9B0200619BD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2166D4601A1A9B0200619BD3 /* LaunchScreen.xib */; };
 		2166D46E1A1A9B0200619BD3 /* HypnosisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D46D1A1A9B0200619BD3 /* HypnosisterTests.swift */; };
 		2166D4781A1A9C7700619BD3 /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D4771A1A9C7700619BD3 /* HypnosisView.swift */; };
+		2166D47A1A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2166D4791A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png */; };
+		2166D47C1A1AC2BF00619BD3 /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D47B1A1AC2BF00619BD3 /* MiniMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		2166D46C1A1A9B0200619BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2166D46D1A1A9B0200619BD3 /* HypnosisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypnosisterTests.swift; sourceTree = "<group>"; };
 		2166D4771A1A9C7700619BD3 /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
+		2166D4791A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PNG_transparency_demonstration_2.png; path = ../../../../Downloads/PNG_transparency_demonstration_2.png; sourceTree = "<group>"; };
+		2166D47B1A1AC2BF00619BD3 /* MiniMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				2166D4571A1A9B0200619BD3 /* AppDelegate.swift */,
+				2166D47B1A1AC2BF00619BD3 /* MiniMapView.swift */,
 				2166D4771A1A9C7700619BD3 /* HypnosisView.swift */,
+				2166D4791A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png */,
 				2166D45E1A1A9B0200619BD3 /* Images.xcassets */,
 				2166D4601A1A9B0200619BD3 /* LaunchScreen.xib */,
 				2166D4551A1A9B0200619BD3 /* Supporting Files */,
@@ -189,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2166D47A1A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png in Resources */,
 				2166D4621A1A9B0200619BD3 /* LaunchScreen.xib in Resources */,
 				2166D45F1A1A9B0200619BD3 /* Images.xcassets in Resources */,
 			);
@@ -208,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2166D47C1A1AC2BF00619BD3 /* MiniMapView.swift in Sources */,
 				2166D4581A1A9B0200619BD3 /* AppDelegate.swift in Sources */,
 				2166D4781A1A9C7700619BD3 /* HypnosisView.swift in Sources */,
 			);

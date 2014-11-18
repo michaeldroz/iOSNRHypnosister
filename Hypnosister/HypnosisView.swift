@@ -16,6 +16,8 @@ class HypnosisView: UIView {
     }
     var timer: NSTimer?
     
+    let logoImage: UIImage? = UIImage(named: "PNG_transparency_demonstration_2.png")
+    
     
     override func didMoveToSuperview() {
         if superview != nil {
@@ -61,9 +63,9 @@ class HypnosisView: UIView {
     
     override func drawRect(rect: CGRect) {
         // Drawing code
-        
+       
         let bounds = self.bounds
-        
+                
         //Figure out the cetner of the bounds rectangle
         let centerX = bounds.origin.x + bounds.size.width / 2.0
         let centerY = bounds.origin.y + bounds.size.height / 2.0
