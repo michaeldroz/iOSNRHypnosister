@@ -14,6 +14,9 @@
 		2166D4781A1A9C7700619BD3 /* HypnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D4771A1A9C7700619BD3 /* HypnosisView.swift */; };
 		2166D47A1A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2166D4791A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png */; };
 		2166D47C1A1AC2BF00619BD3 /* MiniMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166D47B1A1AC2BF00619BD3 /* MiniMapView.swift */; };
+		21E465D71A1BC700008A19C4 /* HypnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E465D61A1BC700008A19C4 /* HypnosisViewController.swift */; };
+		21E465D91A1BC98C008A19C4 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E465D81A1BC98C008A19C4 /* ReminderViewController.swift */; };
+		21E465DB1A1BCA4D008A19C4 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21E465DA1A1BCA4D008A19C4 /* ReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		2166D4771A1A9C7700619BD3 /* HypnosisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisView.swift; sourceTree = "<group>"; };
 		2166D4791A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PNG_transparency_demonstration_2.png; path = ../../../../Downloads/PNG_transparency_demonstration_2.png; sourceTree = "<group>"; };
 		2166D47B1A1AC2BF00619BD3 /* MiniMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniMapView.swift; sourceTree = "<group>"; };
+		21E465D61A1BC700008A19C4 /* HypnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypnosisViewController.swift; sourceTree = "<group>"; };
+		21E465D81A1BC98C008A19C4 /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		21E465DA1A1BCA4D008A19C4 /* ReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				2166D4571A1A9B0200619BD3 /* AppDelegate.swift */,
+				21E465D81A1BC98C008A19C4 /* ReminderViewController.swift */,
+				21E465DA1A1BCA4D008A19C4 /* ReminderViewController.xib */,
+				21E465D61A1BC700008A19C4 /* HypnosisViewController.swift */,
 				2166D47B1A1AC2BF00619BD3 /* MiniMapView.swift */,
 				2166D4771A1A9C7700619BD3 /* HypnosisView.swift */,
 				2166D4791A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png */,
@@ -195,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E465DB1A1BCA4D008A19C4 /* ReminderViewController.xib in Resources */,
 				2166D47A1A1AA7A500619BD3 /* PNG_transparency_demonstration_2.png in Resources */,
 				2166D4621A1A9B0200619BD3 /* LaunchScreen.xib in Resources */,
 				2166D45F1A1A9B0200619BD3 /* Images.xcassets in Resources */,
@@ -217,7 +227,9 @@
 			files = (
 				2166D47C1A1AC2BF00619BD3 /* MiniMapView.swift in Sources */,
 				2166D4581A1A9B0200619BD3 /* AppDelegate.swift in Sources */,
+				21E465D91A1BC98C008A19C4 /* ReminderViewController.swift in Sources */,
 				2166D4781A1A9C7700619BD3 /* HypnosisView.swift in Sources */,
+				21E465D71A1BC700008A19C4 /* HypnosisViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +413,7 @@
 				2166D4731A1A9B0200619BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2166D4741A1A9B0200619BD3 /* Build configuration list for PBXNativeTarget "HypnosisterTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +422,7 @@
 				2166D4761A1A9B0200619BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

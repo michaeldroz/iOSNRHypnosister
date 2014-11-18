@@ -20,13 +20,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIScrollViewDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        //let firstFrame = CGRect(x: 160, y: 240, width: 100, height: 150)
-        //let firstFrame = window!.bounds
-        //let firstView = HypnosisView(frame: firstFrame)
-       // firstView.backgroundColor = UIColor.blueColor()
-       // window!.addSubview(firstView)
+        //Adding a local notificaiton 
+        let settings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
+        application.registerUserNotificationSettings(settings)
         
-        //Create CGRects for frames
+        
+        let hvc = HypnosisViewController()
+       // window!.rootViewController = hvc
+        
+        //This variable represent the app bundle
+        let appBundle = NSBundle.mainBundle()
+        
+        //Look in the appBundle for the file ReminderViewController.xib
+        let rvc = ReminderViewController(nibName: "ReminderViewController", bundle: appBundle)
+        
+        let tbc = UITabBarController()
+        tbc.viewControllers = [hvc, rvc]
+        
+        //window!.rootViewController = rvc
+        window!.rootViewController = tbc
+        
+        //Removing as part of the chapter 4: View Controllers
+        /*  //Create CGRects for frames
         var screenRect = window!.bounds
         var bigRect = screenRect
         bigRect.size.width *= 2.0
@@ -40,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIScrollViewDelegate {
         scrollView.maximumZoomScale = 2.0
         
         scrollView.delegate = self
-        
+         //scrollView.backgroundColor = UIColor.yellowColor()
          window!.addSubview(scrollView)
         
         //Create a super-sized hypnosis view and add it to the scroll view
@@ -58,8 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIScrollViewDelegate {
         let miniMap = MiniMapView(frame: CGRect(x: 10, y: 30, width: 75, height: 135))
         window!.addSubview(miniMap)
         miniMap.updateWithScrollView(scrollView)
-        self.miniMap = miniMap
-        
+        self.miniMap = miniMap */
         window!.backgroundColor = UIColor.whiteColor()
         window!.makeKeyAndVisible()
         
@@ -69,8 +83,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIScrollViewDelegate {
     
         
         func scrollViewDidScroll(scrollView: UIScrollView) {
-            // println("Content offset: \(scrollView.contentOffset)")
-            //miniMap?.updateWithScrollView(scrollView)
             miniMap?.updateWithScrollView(scrollView)
         }
     
@@ -78,18 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIScrollViewDelegate {
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return hypnosisView
     }
-      
-       /* let miniMap = MiniMapView(frame: CGRect(x: 10, y: 30, width: 75, height: 135))
-        window!.addSubview(miniMap)
-        miniMap.updateWithScrollView(scrollView)
-        self.miniMap = miniMap */
-        
-        /*let secondFrame = CGRect(x: 20, y: 30, width: 50, height: 50)
-        let secondView = HypnosisView(frame: secondFrame)
-        secondView.backgroundColor = UIColor.greenColor()
-        //window!.addSubview(secondView)
-        
-        firstView.addSubview(secondView)*/
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
